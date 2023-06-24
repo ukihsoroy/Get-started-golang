@@ -1,3 +1,5 @@
-module 03-hello-thrift
+module hello
 
 go 1.19
+
+require github.com/apache/thrift v0.18.1
