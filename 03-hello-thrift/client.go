@@ -23,8 +23,10 @@ func main() {
 	}
 	defer socket.Close()
 
-	if _, err := client.Say(context.Background(), "K.O"); err != nil {
+	r, err := client.Say(context.Background(), "K.O")
+
+	if err != nil {
 		panic(nil)
 	}
-	fmt.Printf("go")
+	fmt.Println(r)
 }
